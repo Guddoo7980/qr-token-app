@@ -1,0 +1,140 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+/* PAGE */
+body {
+  background: #f4f6f8;
+  min-height: 100vh;
+}
+
+/* MAIN CONTAINER */
+.app-container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 30px 20px;
+}
+
+.app-title {
+  text-align: center;
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+/* GRID */
+.dashboard {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+/* CARD */
+.card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* CARD HEADER */
+.card h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+/* FORM */
+.form-group {
+  margin-bottom: 15px;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #1e88e5;
+}
+
+/* BUTTONS */
+button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* BUTTON COLORS */
+.btn-generate {
+  background: #4caf50;
+  color: white;
+}
+
+.btn-generate:hover {
+  background: #43a047;
+}
+
+.btn-scan {
+  background: #1976d2;
+  color: white;
+}
+
+.btn-scan:hover {
+  background: #1565c0;
+}
+
+/* TOKEN INFO */
+.token-info {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.token-info p {
+  margin: 6px 0;
+  font-size: 15px;
+}
+
+/* QR */
+.qr-box {
+  margin-top: 15px;
+}
+
+.qr-box img {
+  width: 160px;
+  height: 160px;
+}
+
+/* MESSAGE */
+.message {
+  margin-top: 15px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.success {
+  color: #2e7d32;
+}
+
+.error {
+  color: #d32f2f;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .dashboard {
+    grid-template-columns: 1fr;
+  }
+}
